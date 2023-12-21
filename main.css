@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+#pageOne{
+    background-image: url("./assets/img/banner-large-1.jpg");
+}
+.wrapper #pageOne header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    filter: invert(1);
+}
+
+#logo_header{
+    width: 100px;
+    height: 45px;
+    margin-top: 15px;
+}
+
+.wrapper #pageOne header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.wrapper #pageOne header nav img{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
