@@ -2,14 +2,20 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
-#pageOne{
-    background-image: url("./assets/img/banner-large-1.jpg");
+
+#pageOne #mainImg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
 }
+
 .wrapper #pageOne header{
     display: flex;
     justify-content: space-around;
     align-items: center;
     filter: invert(1);
+    text-align: left;
 }
 
 #logo_header{
@@ -23,12 +29,58 @@ body{
     justify-content: space-between;
     width: 45%;
     margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Inter;
+}
+
+.wrapper #pageOne header nav a{
     cursor: pointer;
+    margin-right: 15px;
 }
 
 .wrapper #pageOne header nav img{
     height: 24px;
     width: 24px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
+.wrapper #pageOne main h1{
+    font-size: 130px;
+    font-family: Inter;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.wrapper #pageOne main p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.wrapper #pageOne main .collection{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    color: white;
+    margin-top: 15px;
+    padding: 20px;
+    min-width: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.wrapper #pageOne main .collection:hover{
+    background-color: white;
+    color: black;
+}
+
+.wrapper #pageOne main .content{
+    margin-left: 24%;
+}
+
+.splide{
+    margin-top: 225px;
+}
