@@ -54,3 +54,13 @@ document.querySelector('.splide__arrow--prev').addEventListener('click', () => {
     if (currentImage === 0) currentImage = 1;
     switchImages()
 })
+
+window.onscroll = () => {
+    if (window.scrollY >140){
+        document.querySelectorAll('.aboutDiv').forEach(element => {
+            element.classList.add('animate__animated')
+            element.classList.add('animate__fadeIn')
+            element.classList.add('animate__slower')
+        })
+    }
+}

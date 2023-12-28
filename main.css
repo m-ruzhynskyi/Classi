@@ -6,7 +6,7 @@ body{
 #pageOne #mainImg{
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 }
 
@@ -16,11 +16,12 @@ body{
     align-items: center;
     filter: invert(1);
     text-align: left;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-bottom: 1px rgba(0, 0, 0, 0.23) solid;
 }
 
 #logo_header{
-    width: 100px;
-    height: 45px;
     margin-top: 15px;
 }
 
@@ -34,7 +35,7 @@ body{
     font-family: Inter;
 }
 
-.wrapper #pageOne header nav a{
+.wrapper #pageOne header nav .headerNav{
     cursor: pointer;
     margin-right: 15px;
 }
@@ -83,4 +84,147 @@ body{
 
 .splide{
     margin-top: 225px;
+    margin-bottom: 22.5%;
+}
+
+
+/*⬆⬆ page one ⬆⬆*/
+
+#pageTwo{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+}
+#pageTwo .shortlyAboutUs{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    column-gap: 25px;
+}
+
+#pageTwo .shortlyAboutUs .aboutDiv:nth-child(1){
+    margin-left: auto;
+}
+
+#pageTwo .shortlyAboutUs .aboutDiv:nth-child(4){
+    margin-right: auto;
+}
+
+#pageTwo .shortlyAboutUs .aboutDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 115px;
+}
+
+#pageTwo .shortlyAboutUs .aboutDiv h3{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: Inter;
+}
+
+#pageTwo .shortlyAboutUs .aboutDiv p{
+    margin-top: 0;
+    max-width: 212px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(143,143,143,1);
+}
+
+#pageTwo main{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(2, minmax(350px, 510px));
+    row-gap: 30px;
+    margin-bottom: 100px;
+}
+
+#pageTwo main .firstTwo{
+     display: grid;
+     grid-template-columns: minmax(450px, 530px) minmax(280px, 380px);
+     column-gap: 30px;
+}
+
+#pageTwo main .secondTwo{
+    display: grid;
+    grid-template-columns: minmax(280px, 380px) minmax(450px, 530px);
+    column-gap: 20px;
+}
+
+.photo1, .photo2, .photo3, .photo4{
+    overflow: hidden;
+    position: relative;
+    max-height: 504px;
+    max-width: 355px;
+}
+
+.photo1, .photo4{
+    max-width: 520px;
+}
+
+#pageTwo main img{
+    transition: 1.2s;
+}
+
+#pageTwo main img:hover{
+    transform: scale(1.2);
+    max-width: 100%;
+    max-height: 100%;
+}
+#pageTwo main .text {
+    transform: translateY(-110px);
+    margin-left: 48px;
+}
+
+#pageTwo main .text h3{
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: Serif;
+    margin-bottom: 8px;
+}
+
+#pageTwo main .text a{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter;
+    color: white;
+    cursor: pointer;
+}
+
+#pageTwo main .text .line{
+    width: 93px;
+    height: 2px;
+    background-color: rgb(154, 161, 167);
+    transition: 0.8s;
+}
+
+#pageTwo main .text .whiteLine{
+    width: 0;
+    background-color: white;
+    transform: translateY(-2px);
+}
+
+#pageTwo main .text a:hover ~ .whiteLine{
+    width: 93px;
+}
+
+#pageTwo footer{
+    display: flex;
+    justify-content: center;
+}
+
+#pageTwo footer h2{
+    text-align: center;
+    max-width: 605px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 38px;
 }
