@@ -12,13 +12,13 @@
 </head>
 <body>
 <div class="wrapper">
-    <div id="pageOne">
-        <img id="mainImg" src="">
-        <header>
+    <img id="mainImg" src="">
+    <header>
+        <nav>
             <svg id="logo_header" width="100" height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 45">
                 <image xlink:href="./assets/img/logo-dark.svg" width="100" height="45"></image>
             </svg>
-            <nav>
+            <div id="mainNavBar">
                 <a class="headerNav">HOME</a>
                 <a class="headerNav">COLLECTIONS</a>
                 <a class="headerNav">SALE</a>
@@ -28,16 +28,18 @@
                     <a><img id="cart" src="./assets/img/shopping-cart.png"></a>
                     <a><img id="search" src="./assets/img/loupe.png"></a>
                 </div>
-            </nav>
-        </header>
-        <main>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="startPage">
             <section class="splide" aria-label="...">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div>
                                 <div class="content first">
-                                <h1>COMFORT</h1>
+                                    <h1>COMFORT</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, labore.</p>
                                     <button class="collection">SHOP COLLECTION</button>
                                 </div>
@@ -64,10 +66,8 @@
                     </ul>
                 </div>
             </section>
-        </main>
-    </div>
-    <div id="pageTwo">
-        <header>
+        </section>
+        <section id="about">
             <div class="shortlyAboutUs">
                 <div class="aboutDiv">
                     <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
@@ -97,9 +97,8 @@
                     <h3>Free Global Returns</h3>
                     <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
                 </div>
-
             </div>
-            <main>
+            <div id="photos">
                 <div class="firstTwo">
                     <div class="photo1">
                         <img width="520" height="504" src="./assets/img/category1.jpg">
@@ -140,17 +139,151 @@
                         </div>
                     </div>
                 </div>
-            </main>
-            <footer>
+            </div>
+            <div id="devis">
                 <h2>Our lives happen around our furniture. Every day, our bed frames, dining tables, dressers, and coffee tables support us, often without thanks and appreciation.</h2>
-            </footer>
-        </header>
-    </div>
-    <div id="pageThree"></div>
-    <div id="pageFour"></div>
-    <div id="pageFive"></div>
+            </div>
+        </section>
+        <section id="products">
+            <div class="newArrivals">
+                <div class="productHead">
+                    <h3>OUR NEW ARRIVALS</h3>
+                    <div class="seeAll">
+                        <a>VIEW ALL PRODUCTS</a>
+                        <div class="line"></div>
+                        <div class="whiteLine line"></div>
+                    </div>
+                </div>
+                <div class="catalog ">
+                    <div class="product new">
+                        <div class="chair">
+                            <div class="like">
+                                <img src="./assets/img/heart.png">
+                            </div>
+                            <img src="./assets/img/chair.jpg">
+                            <button>Add ro cart</button>
+                        </div>
+                        <h4>FLORISH ONEPIECE</h4>
+                        <p>$45.00</p>
+                    </div>
+                    <div class="product new">
+                        <div class="chair">
+                            <div class="like">
+                                <img src="./assets/img/heart.png">
+                            </div>
+                            <img src="./assets/img/chair2.jpg">
+                            <button>Add ro cart</button>
+                        </div>
+                        <h4>BAGGY SHIRT</h4>
+                        <p>$55.00</p>
+                    </div>
+                    <div class="product new">
+                        <div class="chair">
+                            <div class="like">
+                                <img src="./assets/img/heart.png">
+                            </div>
+                            <img src="./assets/img/chair3.jpg">
+                            <button>Add ro cart</button>
+                        </div>
+                        <h4>DARK ONEPIECE</h4>
+                        <p>$55.00</p>
+                    </div>
+                    <div class="product new">
+                        <div class="chair">
+                            <div class="like">
+                                <img src="./assets/img/heart.png">
+                            </div>
+                            <img src="./assets/img/chair4.jpg">
+                            <button>Add ro cart</button>
+                        </div>
+                        <h4>DARK FLORISH ONEPIECE</h4>
+                        <p>$95.00</p>
+                    </div>
+                    <div class="product new">
+                        <div class="chair">
+                            <div class="like">
+                                <img src="./assets/img/heart.png">
+                            </div>
+                            <img src="./assets/img/chair5.jpg">
+                            <button>Add ro cart</button>
+                        </div>
+                        <h4>COTTON OFF-WHITE SHIRT</h4>
+                        <p>$65.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bestSellers">
+                <div class="productHead">
+                    <h3>BEST SELLERS</h3>
+                    <div class="seeAll">
+                        <a>VIEW ALL PRODUCTS</a>
+                        <div class="line"></div>
+                        <div class="whiteLine line"></div>
+                    </div>
+                </div>
+                <div class="catalog ">
+                    <div class="product best">
+                        <div class="chair">
+                            <div class="like">
+                                <img src="./assets/img/heart.png">
+                            </div>
+                            <img src="./assets/img/chair1_.jpg">
+                            <button>Add ro cart</button>
+                        </div>
+                        <h4>FLORISH ONEPIECE</h4>
+                        <p>$45.00</p>
+                    </div>
+                    <div class="product best">
+                        <div class="chair">
+                            <div class="like">
+                                <img src="./assets/img/heart.png">
+                            </div>
+                            <img src="./assets/img/chair1_2.jpg">
+                            <button>Add ro cart</button>
+                        </div>
+                        <h4>BAGGY SHIRT</h4>
+                        <p>$55.00</p>
+                    </div>
+                    <div class="product best">
+                        <div class="chair">
+                            <div class="like">
+                                <img src="./assets/img/heart.png">
+                            </div>
+                            <img src="./assets/img/chair1_3.jpg">
+                            <button>Add ro cart</button>
+                        </div>
+                        <h4>DARK ONEPIECE</h4>
+                        <p>$55.00</p>
+                    </div>
+                    <div class="product best">
+                        <div class="chair">
+                            <div class="like">
+                                <img src="./assets/img/heart.png">
+                            </div>
+                            <img src="./assets/img/chair1_4.jpg">
+                            <button>Add ro cart</button>
+                        </div>
+                        <h4>DARK FLORISH ONEPIECE</h4>
+                        <p>$95.00</p>
+                    </div>
+                    <div class="product best">
+                        <div class="chair">
+                            <div class="like">
+                                <img src="./assets/img/heart.png">
+                            </div>
+                            <img src="./assets/img/chair1_5.jpg">
+                            <button>Add ro cart</button>
+                        </div>
+                        <h4>COTTON OFF-WHITE SHIRT</h4>
+                        <p>$65.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
+

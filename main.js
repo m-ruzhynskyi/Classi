@@ -63,4 +63,23 @@ window.onscroll = () => {
             element.classList.add('animate__slower')
         })
     }
+    if (window.scrollY > 40) {
+        document.querySelector('header').classList.add('blackHeader')
+    } else document.querySelector('header').classList.remove('blackHeader')
+
+    if (window.scrollY >2305) {
+        document.querySelectorAll('.new').forEach(element => {
+            element.classList.add('animate__animated')
+            element.classList.add('animate__fadeIn')
+            element.classList.add('animate__slower')
+        })
+    }
+
+    if (window.scrollY >2865) {
+        document.querySelectorAll('.best').forEach(element => {
+            element.classList.add('animate__animated')
+            element.classList.add('animate__fadeIn')
+            element.classList.add('animate__slower')
+        })
+    }
 }

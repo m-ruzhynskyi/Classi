@@ -3,14 +3,14 @@ body{
     box-sizing: border-box;
 }
 
-#pageOne #mainImg{
+#mainImg{
     height: 100%;
     width: 100%;
     position: fixed;
     z-index: -1;
 }
 
-.wrapper #pageOne header{
+.wrapper header nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,11 +21,18 @@ body{
     border-bottom: 1px rgba(0, 0, 0, 0.23) solid;
 }
 
+.blackHeader{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 100;
+}
+
 #logo_header{
     margin-top: 15px;
 }
 
-.wrapper #pageOne header nav{
+.wrapper header nav #mainNavBar{
     display: flex;
     justify-content: space-between;
     width: 45%;
@@ -35,19 +42,33 @@ body{
     font-family: Inter;
 }
 
-.wrapper #pageOne header nav .headerNav{
+.wrapper header nav .headerNav{
     cursor: pointer;
     margin-right: 15px;
+    transition: 0.5s;
+    color: #252525;
+;
 }
 
-.wrapper #pageOne header nav img{
+.wrapper header #mainNavBar a:hover{
+    transform: scale(1.2);
+    color: black;
+}
+
+.wrapper header nav #mainNavBar img{
     height: 24px;
     width: 24px;
     margin-right: 10px;
     cursor: pointer;
 }
 
-.wrapper #pageOne main h1{
+
+/*--------------------------*/
+/*⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ HEADER ⬆⬆⬆⬆⬆⬆⬆⬆*/
+/*--------------------------*/
+
+
+.wrapper #startPage h1{
     font-size: 130px;
     font-family: Inter;
     font-weight: 700;
@@ -55,14 +76,14 @@ body{
     margin-bottom: 20px;
 }
 
-.wrapper #pageOne main p {
+.wrapper #startPage p {
     font-family: Inter;
     font-weight: 400;
     font-size: 16px;
     color: white;
 }
 
-.wrapper #pageOne main .collection{
+.wrapper #startPage .collection{
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.38);
     color: white;
@@ -73,12 +94,12 @@ body{
     border-radius: 10px;
 }
 
-.wrapper #pageOne main .collection:hover{
+.wrapper #startPage .collection:hover{
     background-color: white;
     color: black;
 }
 
-.wrapper #pageOne main .content{
+.wrapper #startPage .content{
     margin-left: 24%;
 }
 
@@ -88,36 +109,38 @@ body{
 }
 
 
-/*⬆⬆ page one ⬆⬆*/
+/*----------------------------*/
+/*⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ START PAGE ⬆⬆⬆⬆⬆⬆⬆⬆*/
+/*----------------------------*/
 
-#pageTwo{
-    position: absolute;
+
+#about{
     width: 100%;
     background-color: white;
 }
-#pageTwo .shortlyAboutUs{
-    margin-top: 100px;
+#about .shortlyAboutUs{
+    transform: translateY(100px);
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
     column-gap: 25px;
 }
 
-#pageTwo .shortlyAboutUs .aboutDiv:nth-child(1){
+#about .shortlyAboutUs .aboutDiv:nth-child(1){
     margin-left: auto;
 }
 
-#pageTwo .shortlyAboutUs .aboutDiv:nth-child(4){
+#about .shortlyAboutUs .aboutDiv:nth-child(4){
     margin-right: auto;
 }
 
-#pageTwo .shortlyAboutUs .aboutDiv{
+#about .shortlyAboutUs .aboutDiv{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 115px;
+    margin-bottom: 210px;
 }
 
-#pageTwo .shortlyAboutUs .aboutDiv h3{
+#about .shortlyAboutUs .aboutDiv h3{
     margin-top: 16px;
     margin-bottom: 16px;
     text-align: center;
@@ -126,7 +149,7 @@ body{
     font-family: Inter;
 }
 
-#pageTwo .shortlyAboutUs .aboutDiv p{
+#about .shortlyAboutUs .aboutDiv p{
     margin-top: 0;
     max-width: 212px;
     text-align: center;
@@ -136,7 +159,7 @@ body{
     color: rgba(143,143,143,1);
 }
 
-#pageTwo main{
+#about #photos{
     display: grid;
     align-items: center;
     justify-items: center;
@@ -145,13 +168,13 @@ body{
     margin-bottom: 100px;
 }
 
-#pageTwo main .firstTwo{
-     display: grid;
-     grid-template-columns: minmax(450px, 530px) minmax(280px, 380px);
-     column-gap: 30px;
+#about #photos .firstTwo{
+    display: grid;
+    grid-template-columns: minmax(450px, 530px) minmax(280px, 380px);
+    column-gap: 30px;
 }
 
-#pageTwo main .secondTwo{
+#about #photos .secondTwo{
     display: grid;
     grid-template-columns: minmax(280px, 380px) minmax(450px, 530px);
     column-gap: 20px;
@@ -168,21 +191,22 @@ body{
     max-width: 520px;
 }
 
-#pageTwo main img{
+#about #photos img{
     transition: 1.2s;
 }
 
-#pageTwo main img:hover{
+#about #photos img:hover{
     transform: scale(1.2);
     max-width: 100%;
     max-height: 100%;
 }
-#pageTwo main .text {
+
+#about #photos .text {
     transform: translateY(-110px);
     margin-left: 48px;
 }
 
-#pageTwo main .text h3{
+#about #photos .text h3{
     color: white;
     font-size: 23px;
     font-weight: 400;
@@ -190,7 +214,7 @@ body{
     margin-bottom: 8px;
 }
 
-#pageTwo main .text a{
+#about #photos .text a{
     margin: 0;
     font-size: 14px;
     font-weight: 400;
@@ -199,32 +223,170 @@ body{
     cursor: pointer;
 }
 
-#pageTwo main .text .line{
+#about #photos .text .line{
     width: 93px;
     height: 2px;
     background-color: rgb(154, 161, 167);
     transition: 0.8s;
 }
 
-#pageTwo main .text .whiteLine{
+#about #photos .text .whiteLine{
     width: 0;
     background-color: white;
     transform: translateY(-2px);
 }
 
-#pageTwo main .text a:hover ~ .whiteLine{
+#about #photos .text a:hover ~ .whiteLine{
     width: 93px;
 }
 
-#pageTwo footer{
+#about #devis{
     display: flex;
     justify-content: center;
 }
 
-#pageTwo footer h2{
+#about #devis h2{
     text-align: center;
     max-width: 605px;
     font-family: Inter;
     font-weight: 400;
     font-size: 38px;
+    margin-bottom: 210px;
+}
+
+/*----------------------------*/
+/*⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ ABOUT ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆*/
+/*----------------------------*/
+
+
+#products .productHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-family: Inter;
+    padding: 0 20px 0 20px;
+}
+
+#products .productHead h3{
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#products .productHead a{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+}
+
+#products .productHead .seeAll .line{
+    width: 145px;
+    height: 0.8px;
+    background-color: rgb(154, 161, 167);
+    transition: 0.8s;
+}
+
+#products .productHead .seeAll .whiteLine{
+    width: 0;
+    background-color: black;
+}
+
+#products .productHead .seeAll a:hover{
+    color: rgb(154, 161, 167);
+}
+
+#products .productHead .seeAll a:hover ~ .whiteLine{
+    width: 145px;
+}
+
+#products .newArrivals, .bestSellers{
+    background-color: white;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 80px;
+    transform: translateY(-4px);;
+}
+
+#products .catalog{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#products .catalog .product{
+    width: 308px;
+}
+
+#products .catalog .product .chair{
+    overflow: hidden;
+    transition: 1s;
+}
+
+#products .catalog .product .chair button{
+    transform: translateY(10px);
+    opacity: 0;
+    margin-top: 9px;
+    width: 306px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    border: 0;
+    padding: 6px 12px 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#products .catalog .product .chair img{
+    max-width: 306px;
+    height: 430px;
+    cursor: pointer;
+    transition: 500ms;
+    transform: translateY(45px);
+}
+
+#products .catalog .product h4{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#products .catalog .product p{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 19px;
+    color: rgba(143,143,143,1);
+    margin-top: 15px;
+}
+
+#products .catalog .product:hover img{
+    transform: translateY(0);
+}
+
+#products .catalog .product:hover button{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#products .catalog .product:hover .chair .like img{
+    z-index: 1;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+#products .catalog .product .chair .like img{
+    opacity: 0;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    margin: -60px 245px;
+    padding: 10px;
+    background-color: white;
 }
