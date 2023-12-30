@@ -390,3 +390,111 @@ body{
     padding: 10px;
     background-color: white;
 }
+
+
+/*----------------------------*/
+/*⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ SALE ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆*/
+/*----------------------------*/
+
+
+#getDiscount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 30px 200px 30px 200px;
+    transform: translateY(-3px);
+    gap: 50px;
+    border-bottom: 0.5px solid rgba(209,209,209, 1);
+}
+
+#getDiscount .text h2{
+    font-weight: 300;
+    font-family: Inter;
+    font-size: 56px;
+    color: white;
+    max-width: 665px;
+}
+
+#getDiscount .discount{
+    display: flex;
+    flex-direction: column;
+}
+
+#getDiscount .discount input{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Inter;
+    color: rgba(209,209,209, 1);
+    border: 0.5px rgba(209,209,209, 1) solid;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 7px 15px;
+    width: 380px;
+    cursor: text;
+}
+
+#getDiscount .discount button{
+    color: white;
+    background-color: rgba(129,164,167,1);
+    border-radius: 5px;
+    border: none;
+    width: 412px;
+    margin-top: 8px;
+    padding: 7px 16px;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 20px;
+}
+
+#getDiscount .discount button:hover{
+    background-color: rgb(121, 146, 148);
+}
+
+
+/*-----------------------------*/
+/*⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ DISCOUNT ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆*/
+/*----------------------------*/
+
+
+.wrapper footer{
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    filter: invert(1);
+    padding: 15px 30px;
+}
+
+.wrapper footer .social{
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.wrapper footer .tel{
+    text-decoration: none;
+}
+
+.wrapper footer .tel span{
+    font-family: Inter;
+    font-size: 16px;
+    color: rgba(143,143,143,1);
+
+}
+
+.wrapper .footer .tel{
+    color: rgba(131,169,172,1);
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Inter;
+}
+
+.wrapper footer .tel:hover{
+    color: rgba(204,204,204,1);
+}
+
+/*-----------------------------*/
+/*⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ FOOTER ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆*/
+/*----------------------------*/
