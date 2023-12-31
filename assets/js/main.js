@@ -1,10 +1,3 @@
-let splide = new Splide( '.splide', {
-    type  : 'fade',
-    rewind: false,
-} );
-
-splide.mount();
-
 function switchImages() {
     switch (currentImage){
         case 1:
@@ -35,9 +28,17 @@ function removeMainTextAnimation (element){
     document.querySelector(`.${element}`).classList.remove('animate__fadeInUp')
 }
 
-let currentImage = 1;
 
+let currentImage = 1;
 const mainImg = document.querySelector('#mainImg');
+
+let splide = new Splide( '.splide', {
+    type  : 'fade',
+    rewind: false,
+} );
+
+splide.mount();
+
 document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll(".splide__pagination__page");
     elements.forEach(el => el.style.display = 'none')
