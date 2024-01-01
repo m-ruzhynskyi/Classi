@@ -66,13 +66,19 @@ class Display{
     initStartPage(element) {
         for (let key in element){
             let el = element[key]
-            let h1 = document.createElement('h1')
-            let p = document.createElement('p')
 
+            let h1 = document.createElement('h1')
             h1.innerText = el.h1
+
+            let p = document.createElement('p')
             p.innerText = el.p
 
-            document.querySelector(`.${key}`).prepend(h1, p)
+            let butt = document.createElement('button')
+            butt.classList.add('collection')
+            butt.innerText = 'SHOP COLLECTION'
+
+
+            document.querySelector(`.${key}`).append(h1, p, butt)
         }
     }
 
@@ -99,11 +105,6 @@ class Display{
                         break
                 }
 
-                let butt = document.createElement('button')
-                butt.classList.add('collection')
-                butt.innerText = 'SHOP COLLECTION'
-
-                curDiv.append(butt)
             })
 
             document.querySelector('.shortlyAboutUs').append(curDiv)
