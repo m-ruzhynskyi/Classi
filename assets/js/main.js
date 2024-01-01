@@ -38,7 +38,6 @@ let splide = new Splide( '.splide', {
 } );
 
 splide.mount();
-
 document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll(".splide__pagination__page");
     elements.forEach(el => el.style.display = 'none')
@@ -49,13 +48,11 @@ document.querySelector('.splide__arrow--next').addEventListener('click', () => {
     switchImages()
     if (currentImage === 4) currentImage = 1;
 })
-
 document.querySelector('.splide__arrow--prev').addEventListener('click', () => {
     currentImage -= 1;
     if (currentImage === 0) currentImage = 1;
     switchImages()
 })
-
 window.onscroll = () => {
     if (window.scrollY >140){
         document.querySelectorAll('.aboutDiv').forEach(element => {
@@ -84,3 +81,5 @@ window.onscroll = () => {
         })
     }
 }
+
+let a = new Display()
